@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartRoute Optimizer</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SmartRoute Optimizer</h1>
+        <h2>MINeD Hackathon 2025</h2>
+        
+        <div class="team">
+            <p><strong>Team: QForce</strong></p>
+            <p>Vishwa Makwana (Leader)</p>
+            <p>Bhavy Zala</p>
+            <p>Himanshi Rakholiya</p>
+            <p>Puja Patro</p>
+            <p>Virendrasinh Roal</p>
+        </div>
+
+        <button class="btn" onclick="downloadExcel()">📂 Download Excel File</button>
+        <a href="/visualize_trips" target="_blank" class="btn map-btn">🗺️ View Optimized Routes</a>
+    </div>
+
+    <script>
+        function downloadExcel() {
+            window.location.href = "/generate_excel";
+        }
+    </script>
+</body>
+</html>
